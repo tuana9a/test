@@ -1,0 +1,76 @@
+/* SECTION: stuffing */
+.drag-to-move {
+    position: absolute;
+    /* margin: 0 !important; */
+    z-index: 9;
+}
+.drag-to-move-header {
+    cursor: move;
+}
+
+/* SECTION: icon, sign */
+a.login-with-google {
+    box-shadow: -2px 3px 4px black;
+    padding: 2px;
+    cursor: pointer;
+    min-width: 200px;
+    text-decoration: none;
+    color: black;
+}
+a.login-with-google span.google-icon,
+a.login-with-google span.bell-icon-normal,
+a.login-with-google span.bell-icon-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-sign {
+    display: inline-block;
+    border-radius: 50%;
+
+    --sign-size: 30px;
+    width: var(--sign-size);
+    height: var(--sign-size);
+
+    --ring-size: 4px;
+    border: var(--ring-size) solid #f3f3f3;
+    border-top: var(--ring-size) solid #3498db;
+
+    animation: spin 2s linear infinite;
+}
+
+/* SECTION: animation */
+.spin-animation {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.shake-animation {
+    animation: shake 0.5s linear infinite;
+}
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

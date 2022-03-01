@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE events [
+
+<!ELEMENT events (event+)>
+
+<!ELEMENT event (event-name,
+                 attendance-list)>
+
+<!ELEMENT event-name (#PCDATA)>
+
+<!ELEMENT attendance-list (attendance+)>
+
+<!ELEMENT attendance (attendance-id,
+                      attendance-name,
+                      country,
+                      medal-list?)>
+
+<!ELEMENT attendance-id (#PCDATA)>
+
+<!ELEMENT attendance-name (#PCDATA)>
+
+<!ELEMENT country (#PCDATA)>
+
+<!ELEMENT medal-list (medal+)>
+
+<!ELEMENT medal (medal-name)>
+
+<!ELEMENT medal-name (#PCDATA)>
+
+]>
+
+<events>
+    <event>
+        <event-name>su kien 1</event-name>
+        <attendance-list>
+            <attendance>
+                <attendance-id>bc34</attendance-id>
+                <attendance-name>nguyen minh tuan</attendance-name>
+                <country>viet nam number one</country>
+                <medal-list>
+                    <medal>
+                        <medal-name>vang</medal-name>
+                    </medal>
+                    <medal>
+                        <medal-name>vang</medal-name>
+                    </medal>
+                </medal-list>
+            </attendance>
+            <attendance>
+                <attendance-id>ab12</attendance-id>
+                <attendance-name>nguyen minh tuan</attendance-name>
+                <country>viet nam number one</country>
+                <medal-list>
+                    <medal>
+                        <medal-name>vang</medal-name>
+                    </medal>
+                    <medal>
+                        <medal-name>vang</medal-name>
+                    </medal>
+                </medal-list>
+            </attendance>
+        </attendance-list>
+    </event>
+    <event>
+        <event-name>su kien 2</event-name>
+        <attendance-list>
+            <attendance>
+                <attendance-id>nc45</attendance-id>
+                <attendance-name>nguyen minh tuan</attendance-name>
+                <country>viet nam number one</country>
+                <medal-list>
+                    <medal>
+                        <medal-name>vang</medal-name>
+                    </medal>
+                    <medal>
+                        <medal-name>vang</medal-name>
+                    </medal>
+                </medal-list>
+            </attendance>
+        </attendance-list>
+    </event>
+</events>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="PhieuDiem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="SinhVien" />
+                <xs:element ref="BangDiem" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SinhVien">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="HoTen" />
+                <xs:element ref="Lop" />
+                <xs:element ref="DiaChi" />
+                <xs:element ref="GioiTinh" />
+                <xs:element ref="NgaySinh" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="HoTen" type="xs:string" />
+    <xs:element name="Lop" type="xs:string" />
+    <xs:element name="DiaChi" type="xs:string" />
+    <xs:element name="GioiTinh" type="xs:string" />
+    <xs:element name="NgaySinh" type="xs:string" />
+    <xs:element name="BangDiem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="MonHoc" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="MonHoc">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="STT" />
+                <xs:element ref="TenMon" />
+                <xs:element ref="DienKy1" />
+                <xs:element ref="DienKy2" />
+                <xs:element ref="DienTB" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="STT" type="xs:integer" />
+    <xs:element name="TenMon" type="xs:string" />
+    <xs:element name="DienKy1" type="xs:integer" />
+    <xs:element name="DienKy2" type="xs:integer" />
+    <xs:element name="DienTB" type="xs:integer" />
+</xs:schema>

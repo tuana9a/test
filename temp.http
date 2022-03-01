@@ -1,0 +1,15 @@
+POST https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&key=AIzaSyAa8yy0GdcGPHdtD083HiGGx_S0vMPScDM HTTP/1.1
+
+Authorization: Bearer ya29.A0ARrdaM96PEV4XvO9NundVO3olIBw7XA_r21vKjMwLeaZeiE0Ak6DVlK8SWG0KmQ9O_2OqVqnt7WbhR0BKRcloUZTqd5EiyIt-ancdFfDXCY7PqQ23lV3DRFij46AGe-6IxgSeQEyiuYCt4NbdFO3S2hGfFI5dqDS0g
+Accept: application/json
+Content-Type: application/json
+
+{
+  "snippet": {
+    "playlistId": "PLIvzY7-_ZMVdQmhCa4025S-bX1jLhp5CF",
+    "resourceId": {
+      "kind": "youtube#video",
+      "videoId": "5hRkStzJPQE"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+Một tài liệu XML được dùng để biểu diễn kết quả thi đấu các môn điền kinh.
+Mỗi cuộc thi đấu của một môn bất kì được coi là một sự kiện.
+Trong tài liệu XML này chứa rất nhiều các sự kiện.
+Mỗi sự kiện có một cái tên.
+Ngoài ra, còn có các vận động viên tham gia sự kiện đó.
+Mỗi vận động viên được biểu diễn bằng tên vận động viên, mã vận động viên, tên quốc gia mà họ đại diện, và huy chương họ đạt được (nếu có).
+Mã vận động viên là xâu gồm 4 ký tự, trong đó 2 ký tự đầu là chữ, 2 ký tự sau là số.
+Huy chương gồm có: huy chương vàng, bạc và đồng.
