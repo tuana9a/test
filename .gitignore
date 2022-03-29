@@ -256,8 +256,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# tuana9a
-node_modules/
-resource/
+# @tuana9a
 .idea/
 .vscode/
+*.local*
